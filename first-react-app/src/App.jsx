@@ -4,11 +4,14 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const AddVal = ()=>{
-    setCount(count => count+1);
-    setCount(count => count+1);
-    setCount(count => count+1);
-    setCount(count => count+1);
-    // setCount(count+1) 
+    // setCount(count => count+1);
+    // setCount(count => count+1);
+    // setCount(count => count+1);
+    // setCount(count => count+1);
+    if(count<20)setCount(count+1) 
+    else{
+    setCount(0);
+    }
   }
   const RemoveVal = ()=>{
     
@@ -16,7 +19,7 @@ function App() {
   }
   return (
    <div>
-   <h1 class = "first counter">Chai aur Code Counter Code</h1>
+   <h1 className = "first counter">Chai aur Code Counter Code {count}</h1>
    <h3>Aditya Sharma</h3>
    <button id = 'btn' onClick={AddVal}>Add value {count}</button>
    <br />
