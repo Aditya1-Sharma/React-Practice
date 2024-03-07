@@ -8,6 +8,9 @@ function App() {
     // setCount(count => count+1);
     // setCount(count => count+1);
     // setCount(count => count+1);
+
+    // setCount(count+1)
+    // setCount(count+2)
     if(count<20)setCount(count+1) 
     else{
     setCount(0);
@@ -17,6 +20,7 @@ function App() {
     
     if(count>0)setCount(count-1);
   }
+    // console.log(count);
   return (
    <div>
    <h1 className = "first counter">Chai aur Code Counter Code {count}</h1>
