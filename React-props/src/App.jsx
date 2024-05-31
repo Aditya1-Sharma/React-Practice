@@ -16,7 +16,7 @@ const price={
     <Card name="Dell inspiron" obj = {price}/>
 
 
-    </>
+    </> 
   )
 }
 

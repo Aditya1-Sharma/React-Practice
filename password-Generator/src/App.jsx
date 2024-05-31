@@ -37,7 +37,7 @@ function App() {
       <h1 className="text-3xl font-bold text-center underline text-white">
         Password Generator
       </h1>
-      <div className=" p-33 w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-800">
+      <div className=" p-33 w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-800 text-center align-bottom mt-20">
         <div className="flex shadow rounded-lg overflow-hidden mb-4">
           <input
             type="text"
@@ -62,6 +62,7 @@ function App() {
               onChange={(e) => {setlength(e.target.value)}}
             />
             <label>Length {length}</label>
+            {/* <span>Length : {length}</span> */}
           </div>
           <div className="flex items-center gap-x-1">
             <input

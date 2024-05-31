@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function UpdateCount() {
   const [count, setCount] = useState(0);
-  console.log(count);
+  // console.log(count);
 
   function handleClick() {
     setCount(count + 1);
